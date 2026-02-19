@@ -149,15 +149,6 @@
       100% { background-position: -100% 0; }
     }
 
-    /* === TAGLINE === */
-    .tagline {
-      font-size: clamp(0.7rem, 2vw, 0.95rem);
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      animation: fadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
-    }
-
     @keyframes fadeUp {
       from {
         opacity: 0;
@@ -200,7 +191,7 @@
       font-size: 0.8rem;
       letter-spacing: 0.05em;
       text-decoration: none;
-      cursor: default;
+      cursor: pointer;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
       overflow: hidden;
@@ -232,17 +223,6 @@
       height: 6px;
       border-radius: 50%;
       flex-shrink: 0;
-    }
-
-    /* === COMING SOON PILL === */
-    .app-pill.soon {
-      opacity: 0.45;
-      cursor: default;
-      pointer-events: none;
-    }
-
-    .app-pill.soon .dot {
-      background: rgba(255,255,255,0.3);
     }
 
     /* === FOOTER LINKS === */
@@ -285,15 +265,13 @@
       <div class="logo" data-text="NICKMASK">NICKMASK</div>
     </div>
 
-    <p class="tagline">Product &nbsp;·&nbsp; Apps &nbsp;·&nbsp; Ideas</p>
-
     <div class="sep"></div>
 
     <div class="apps">
-      <span class="app-pill soon">
-        <span class="dot"></span>
-        App coming soon
-      </span>
+      <a href="https://nickmask.com/brain" class="app-pill" target="_blank" rel="noopener">
+        <span class="dot" style="background: #a78bfa;"></span>
+        Brain
+      </a>
     </div>
 
     <nav class="footer-links">
